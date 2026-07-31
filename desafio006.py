@@ -1,0 +1,5 @@
+numero = float(input('lance um numero:  '))
+print('o numero digitado foi {}'.format(numero))
+print('o dobro do numero digido é {}'.format(numero*2))
+print('o triplo do numro digitado foi {}'.format(numero*3))
+print('a raiz quadradad deste numero é {}'.format(numero**0.5))
