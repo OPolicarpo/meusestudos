@@ -7,7 +7,6 @@ while cont != 0:
     termo = termo + razao
     cont = cont + 1
     print (termo)
-
     qt = int(input('quantos termos a mais deseja mostrar: '))
     if qt != 0:
         for cont in range (qt):

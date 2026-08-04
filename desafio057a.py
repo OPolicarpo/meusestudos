@@ -1,4 +1,6 @@
 sexo = str(input('Qual seu sexo [F] ou [M]: ')).upper()
+
+       
 while sexo != 'M' and sexo != 'F':
     sexo = str(input('Qual seu sexo [F] ou [M]: ')).upper()
 if sexo == 'M':
