@@ -7,5 +7,16 @@ n= (
    int(input('Digite o 2o. numero: ')),
    int(input('Digite o 3o. numero: ')),
    int(input('Digite o 4o. numero: '))
-   )
-print(f'A- O 9 apareceu {n.len(9)}')
+   )   
+if 9 in n:
+    print(f'A- O 9 apareceu {n.count(9)} vezes')
+else: 
+    print('O valor 9 nao apareceu nenhuza vez')   
+if 3 in n:
+    print (f'B- O 3 apareceu {n.index(3)+1} posicao')
+else: print('O numero 3 nao apareceu em nenhuma posiçao')
+for numero in n:
+    if numero %2 == 0:
+       
+        print(f'C- Os numeros pares são {numero}')
+
