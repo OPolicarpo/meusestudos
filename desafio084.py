@@ -6,7 +6,6 @@ c - uma listagem com as pessoas mais leves.'''
 cad= []
 lista = []
 qnt = 0
-
 print('-='*30)
 print('Cadastro de cliente')
 print('-='*30)
