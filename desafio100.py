@@ -1,0 +1,1 @@
+faca um programa que tenha uma lista chaada NUMEROS, e duas fucoes 
