@@ -8,12 +8,18 @@ class Produto:
     def __init__(self, nome, preco):
         self.nome = nome
         self.preco = preco
+
+    
+    def __str__(self):
+        return f"{self.nome} custa R${self.preco:,.2f}"
     
     def etiqueta (self):
-        linha = ('-'*30)
-        print(
-        Panel(f'{self.nome} \n {linha} \n {self.preco}'.center(len(linha)), title = 'PRODUTO', expand=False)
-        )
+        conteudo = f"{self.nome.center(30, '-')}"
+        conteudo += f"{'-'* 30}"
+        precof = f"R${self.preco:,.2f}"
+        conteudo+= f"{precof.center(30, '-')}"
+        etiqueta = Panel(conteudo, title='Produto', width=34)
+        print(etiqueta)
 
 
 p1 = Produto('Iphone 17 pro max', 7_500)
