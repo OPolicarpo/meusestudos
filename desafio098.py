@@ -10,15 +10,13 @@ def contador(a, b, c):
     print('=-'*30)
     print(f'Contagem de {a} ate {b} de {c} em {c}')
     for cont in range(a,b,c):
-        print(cont, end='')
+        print(cont, end='', flush=True)
+        sleep(0.5)
         print()
-        sleep(0.3)
-    print('fim')
+        
     print('-='*30)
     
     print()
-        
-
 contador(10, 0, -2)
 contador(0, 11, 1)
 while True:
